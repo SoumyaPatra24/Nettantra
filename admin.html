@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Slot Booking</title>
+    <style>
+        body {
+            background-color: #3d87c4;
+        }
+
+        .pageheader {
+            display: flex;
+            justify-content: center;
+            background-color: #0e469b;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        table,
+        td,
+        th {
+            background-color: white;
+            font-size: 20px;
+            border: 2px solid #ddd;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 15px;
+        }
+
+        .nav_wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .page_link {
+            width: 100%;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: #0e9b65;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pageheader">
+        <h1>Vaccine Slot Booking Admin Page</h1>
+    </div>
+    <div>
+        <table id="myTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Aadhar Number</th>
+                <th>Address</th>
+                <th>Date</th>
+            </tr>
+        </table>
+    </div>
+    <div class="nav_wrapper">
+        <a href="/index.html">
+            <button class="page_link">Index Page</button>
+        </a>
+    </div>
+    <script src="./adminScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccine Booking App</title>
+    <script src="./userScript.js"></script>
+    <style>
+        body {
+            background-color: #3d87c4;
+        }
+
+        .pageheader {
+            display: flex;
+            justify-content: center;
+            background-color: #0e469b;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .form_div {
+            display: flex;
+            justify-content: center;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            font-weight: bold;
+            background-color: #0e469b;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #1d388f;
+        }
+
+        form {
+            border-radius: 5px;
+            width: 50%;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .required-field::after {
+            content: " *";
+            color: red;
+        }
+
+        .nav_wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .page_link {
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #0e9b65;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pageheader">
+        <h1>Vaccine Booking App</h1>
+    </div>
+    <div class="form_div">
+        <form>
+            <label for="name" class="required-field">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <label for="email" class="required-field">Email:</label>
+            <input type="email" id="email" placeholder="Enter your Email" required />
+            <label for="age" class="required-field">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" required />
+            <label for="phone" class="required-field">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter your Phone number" required />
+            <label for="aadhar" class="required-field">Aadhar Number:</label>
+            <input type="number" id="aadhar" placeholder="Enter your Aadhar number" required />
+            <label for="address" class="required-field">Address:</label>
+            <input type="text" id="address" placeholder="Enter your Address" required />
+            <label for="date" class="required-field">Date:</label>
+            <input type="date" id="date" required />
+            <input type="submit" onclick="saveData()" value="Submit">
+        </form>
+    </div>
+    <div class="nav_wrapper">
+        <a href="/admin.html">
+            <button class="page_link">Admin Page</button>
+        </a>
+    </div>
+</body>
+
+</html>
