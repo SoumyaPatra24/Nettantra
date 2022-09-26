@@ -23,7 +23,7 @@ const saveData = () => {
         return
     }
 
-    if (aadhar.length < 4) {
+    if (aadhar.length < 16) {
         alert('Invalid Aadhar Number! Aadhar number must contain atleast 16 digits.')
         return
     }
